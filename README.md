@@ -24,5 +24,55 @@ Using **Bun** is recommended for this project as it ensures maximum installation
 Make sure you have **Bun** installed on your machine. If you don't have it installed yet, you can run:
 
 ```bash
-curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
+curl -fsSL https://bun.sh/install | bash
 ```
+
+### Steps to Run:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <your-repository-url>
+   cd <project-folder-name>
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   bun install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   bun run dev
+   ```
+
+4. Open your browser and navigate to:
+   `http://localhost:5173`
+
+---
+
+## 📦 Available Scripts
+
+The following commands are available in `package.json`:
+
+| Command           | Description                                                           |
+| :---------------- | :-------------------------------------------------------------------- |
+| `bun run dev`     | Starts the local development server with Hot Module Replacement (HMR) |
+| `bun run build`   | Builds the application for production                                 |
+| `bun run preview` | Locally previews the production build                                 |
+| `bun run lint`    | Lints the codebase using ESLint                                       |
+| `bun run test`    | Runs unit tests using Vitest                                          |
+
+---
+
+## 📂 Project Structure
+
+The project follows the standard TanStack Start file-system structure:
+
+- `src/routes/` — **File-based routing.** Every file here automatically becomes a route.
+- `src/lib/` — Helper functions, validation schemas, and shared utilities.
+- `src/components/` — Reusable UI components.
+- `src/styles.css` — Global styles and Tailwind CSS configuration.
+- `routeTree.gen.ts` — **Automatically generated file** by TanStack Router (do not edit manually).
